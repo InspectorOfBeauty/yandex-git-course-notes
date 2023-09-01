@@ -481,10 +481,9 @@ Staging area так же назыавют index (каталог) или cache, �
 graph TD;
 	A[File life cycle] --> B{Is it a new file?};
 	B -- Yes --> C[untracked];
-	B -- No --> D[tracked];
+	B -- No --> D[commited, tracked];
 	C -- git add --> E[staged, tracked];
-	E -- git commit --> F[commited, tracked];
-	F --> D[tracked]
+	E -- git commit --> D[commited, tracked];
 	D -- Changing file --> G[modified, tracked];
 	G -- git add --> E[staged, tracked];
 ```
