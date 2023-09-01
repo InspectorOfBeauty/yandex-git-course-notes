@@ -486,7 +486,7 @@ graph TD;
 	E -- git commit --> F[commited, tracked];
 	D -- Changing file --> G[modified, tracked];
 	G -- git add --> H[staged, tracked];
-	H -- git commit --> I[commited, tracked];
+	H -- git commit --> F[commited, tracked];
 ```
 
 
