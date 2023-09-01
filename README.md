@@ -476,6 +476,18 @@ Staging area так же назыавют index (каталог) или cache, �
 ```git add file.txt```
 
 
+## Жизненный цикл файла в GIT
+```mermaid
+graph LR;
+	untracked -- "git add" --> staged;
+	staged -- "git commit" --> commited (tracked)
+	staged -- "make changes" --> staged, modified, (tracked)
+	staged, modified (tracked) -- "git add" --> staged (tracked)
+```
+
+
+
+
 
  
 
